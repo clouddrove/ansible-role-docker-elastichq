@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: Ansible Role Docker Elastichq
+name: Ansible Role Docker ElasticHQ
 
 # License of this project
 license: "MIT"
@@ -42,11 +42,11 @@ prerequesties:
 # yamllint enable
 # What Includes to display
 what_includes:
-  - name: "elastichq"
+  - name: "ElasticHQ"
 
 #  description of this project
 description: |-
-  This ansible role is used to install elastichq  with docker on linux.
+  This ansible role is used to install ElasticHQ  with docker on linux.
 
 # How to use this project
 usage: |-

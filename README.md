@@ -4,11 +4,11 @@
 <p align="center"> <img src="https://user-images.githubusercontent.com/50652676/62451340-ba925480-b78b-11e9-99f0-13a8a9cc0afa.png" width="100" height="100"></p>
 
 <h1 align="center">
-    Ansible Role Docker Elastichq
+    Ansible Role Docker ElasticHQ
 </h1>
 
 <p align="center" style="font-size: 1.2rem;">
-    This ansible role is used to install elastichq  with docker on linux.
+    This ansible role is used to install ElasticHQ  with docker on linux.
      </p>
 
 <p align="center">
@@ -36,10 +36,10 @@
 <a href='https://facebook.com/sharer/sharer.php?u=https://github.com/clouddrove/ansible-role-docker-elastichq'>
   <img title="Share on Facebook" src="https://user-images.githubusercontent.com/50652676/62817743-4f64cb80-bb59-11e9-90c7-b057252ded50.png" />
 </a>
-<a href='https://www.linkedin.com/shareArticle?mini=true&title=Ansible+Role+Docker+Elastichq&url=https://github.com/clouddrove/ansible-role-docker-elastichq'>
+<a href='https://www.linkedin.com/shareArticle?mini=true&title=Ansible+Role+Docker+ElasticHQ&url=https://github.com/clouddrove/ansible-role-docker-elastichq'>
   <img title="Share on LinkedIn" src="https://user-images.githubusercontent.com/50652676/62817742-4e339e80-bb59-11e9-87b9-a1f68cae1049.png" />
 </a>
-<a href='https://twitter.com/intent/tweet/?text=Ansible+Role+Docker+Elastichq&url=https://github.com/clouddrove/ansible-role-docker-elastichq'>
+<a href='https://twitter.com/intent/tweet/?text=Ansible+Role+Docker+ElasticHQ&url=https://github.com/clouddrove/ansible-role-docker-elastichq'>
   <img title="Share on Twitter" src="https://user-images.githubusercontent.com/50652676/62817740-4c69db00-bb59-11e9-8a79-3580fbbf6d5c.png" />
 </a>
 
@@ -68,7 +68,7 @@ This module has a few dependencies:
 ## What Includes
 
 Followiing things includes in this role:
-- elastichq
+- ElasticHQ
 
 
 
