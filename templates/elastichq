@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+docker pull elastichq/elasticsearch-hq:"{{ elastichq_version }}"
+
+docker rm -f -v elastichq || :
+
+docker run -u  root  --net host --rm --name=elastichq \
+         -e HQ_DEFAULT_URL='{{ elasticsearch_url }}' \
+          elastichq/elasticsearch-hq:{{ elastichq_version }}

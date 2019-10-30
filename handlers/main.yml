@@ -1,0 +1,16 @@
+---
+- name: restart elastichq
+  service:
+    name: elastichq
+    state: restarted
+    enabled: true
+
+- name: reload elastichq
+  systemd:
+    name: elastichq
+    state: reloaded
+
+- name: start elastichq
+  systemd:
+    name: elastichq
+    state: started

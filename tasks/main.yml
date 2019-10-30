@@ -1,0 +1,4 @@
+---
+
+- name: install docker elastichq
+  import_tasks: install.yml

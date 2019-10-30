@@ -1,0 +1,9 @@
+[Unit]
+Description=Elastichq Server
+
+[Service]
+TimeoutStartSec=0
+Restart=always
+ExecStart=/usr/local/bin/elastichq
+[Install]
+WantedBy=multi-user.target

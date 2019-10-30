@@ -1,0 +1,71 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: Ansible Role Docker Elastichq
+
+# License of this project
+license: "MIT"
+
+# Canonical GitHub repo
+github_repo: clouddrove/ansible-role-docker-elastichq
+
+# Badges to display
+badges:
+  - name: "Ansible"
+    image: "https://img.shields.io/badge/Ansible-2.8-green?style=flat&logo=ansible"
+    url: "https://www.ansible.com"
+  - name: "Licence"
+    image: "https://img.shields.io/badge/License-MIT-blue.svg"
+    url: "LICENSE.md"
+  - name: "Distribution"
+    image: "https://img.shields.io/badge/ubuntu-16.x-orange?style=flat&logo=ubuntu"
+    url: "https://ubuntu.com/"
+  - name: "Distribution"
+    image: "https://img.shields.io/badge/ubuntu-18.x-orange?style=flat&logo=ubuntu"
+    url: "https://ubuntu.com/"
+  - name: "Distribution"
+    image: "https://img.shields.io/badge/centos-7.x-orange"
+    url: "https://www.centos.org/"
+# Prerequesties to display
+# yamllint disable
+prerequesties:
+  - name: "Ansible2.8"
+    url: "https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html"
+  - name: "Python"
+    url: "https://www.python.org/downloads"
+  - name: "Docker"
+    url: "https://docs.docker.com/install/linux/docker-ce/ubuntu"
+# yamllint enable
+# What Includes to display
+what_includes:
+  - name: "elastichq"
+
+#  description of this project
+description: |-
+  This ansible role is used to install elastichq  with docker on linux.
+
+# How to use this project
+usage: |-
+  ```yaml
+  - hosts: localhost
+    remote_user: root
+    roles:
+      - clouddrove.ansible_role_docker_elastichq
+  ```
+# Variables use in the project
+variables: |-
+  ```yaml
+        elastichq_version: "release-v3.5.4"
+        elasticsearch_url: http://127.0.0.1:9200
+        elastichq_port: 5000
+        elastichq_host: "0.0.0.0"
+  ```
+# How to install project
+installation: |-
+  ```console
+    $ ansible-galaxy install clouddrove.ansible_role_docker_elastichq
+  ```

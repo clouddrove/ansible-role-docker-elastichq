@@ -1,0 +1,32 @@
+---
+
+- name: copy elastichq script
+  template:
+     src: "elastichq"
+     dest: /usr/local/bin/elastichq
+     mode: 0755
+     owner: root
+     group: root
+
+- name: copy elastichq script
+  template:
+     src: "elastichq.service"
+     dest: /etc/systemd/system/elastichq.service
+     mode: 0644
+     owner: root
+     group: root
+
+- name: restart elastichq
+  service:
+     name: elastichq
+     state: restarted
+     enabled: true
+
+- name: wait for elastichq to become ready
+  wait_for:
+     host: "{{ elastichq_bind_host }}"
+     port: "{{ elastichq_port }}"
+     state: started
+     delay: 5
+     connect_timeout: 15
+     timeout: 300
