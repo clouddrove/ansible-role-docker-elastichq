@@ -21,6 +21,7 @@
      name: elastichq
      state: restarted
      enabled: true
+     enabled: true
 
 - name: wait for elastichq to become ready
   wait_for:
