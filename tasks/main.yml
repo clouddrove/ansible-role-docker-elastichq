@@ -1,4 +1,4 @@
 ---
 
-- name: install docker elastichq
-  import_tasks: install.yml
+- name: Install docker elastichq
+  ansible.builtin.import_tasks: install.yml

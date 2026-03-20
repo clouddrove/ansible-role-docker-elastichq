@@ -1,29 +1,29 @@
 ---
 
-- name: copy elastichq script
-  template:
+- name: Copy elastichq script
+  ansible.builtin.template:
      src: "elastichq"
      dest: /usr/local/bin/elastichq
      mode: 0755
      owner: root
      group: root
 
-- name: copy elastichq script
-  template:
+- name: Copy elastichq script
+  ansible.builtin.template:
      src: "elastichq.service"
      dest: /etc/systemd/system/elastichq.service
      mode: 0644
      owner: root
      group: root
 
-- name: restart elastichq
-  service:
-     name: elastichq
+- name: Restart elastichq
+  ansible.builtin.service:
+     name: Elastichq
      state: restarted
      enabled: true
 
-- name: wait for elastichq to become ready
-  wait_for:
+- name: Wait for elastichq to become ready
+  ansible.builtin.wait_for:
      host: "{{ elastichq_bind_host }}"
      port: "{{ elastichq_port }}"
      state: started
