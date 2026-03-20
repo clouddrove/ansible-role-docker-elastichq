@@ -1,16 +1,16 @@
 ---
-- name: restart elastichq
-  service:
-    name: elastichq
+- name: Restart elastichq
+  ansible.builtin.service:
+    name: Elastichq
     state: restarted
     enabled: true
 
-- name: reload elastichq
-  systemd:
-    name: elastichq
+- name: Reload elastichq
+  ansible.builtin.systemd:
+    name: Elastichq
     state: reloaded
 
-- name: start elastichq
-  systemd:
-    name: elastichq
+- name: Start elastichq
+  ansible.builtin.systemd:
+    name: Elastichq
     state: started
